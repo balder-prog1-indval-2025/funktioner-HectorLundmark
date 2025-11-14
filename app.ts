@@ -40,9 +40,9 @@ let minsta=numbers[0]
 for (let i = 1; i < numbers.length; i++) {
     if(numbers[i] < minsta){
         minsta=numbers[i]
-    }
-}
-return minsta
+         }
+     }
+    return minsta
 }
 write(min(4, 3, 6, 8))
 write(min(67, 37, 54, 21, 41))
@@ -75,3 +75,31 @@ write(lista.includes(6))
 write(includes(6, [5, 2, 7]))
 write(includes(6, [6, 2, 7]))
 */
+
+function visaRepeterat(ord:string, antal:number){
+    for (let i = 0; i < antal; i++) {
+        write(ord)
+    }
+}
+visaRepeterat("Hej", 3)
+visaRepeterat("Balder", 2)
+
+function visaUppdelat(ord:string, tecken:string){
+    for (let i = 0; i < ord.length; i++) {
+        if (ord[i] == tecken) {
+            write("\n", "")
+        }else{
+            write(ord[i], "")
+        }
+    }
+    write();
+}
+
+visaUppdelat("a-b-c-d", "-");
+visaUppdelat("Apple/Microsoft/Google", "/")
+
+function antalMellanslag(ord:string){
+    for (let i = 0; i < ord.length; i++){
+        
+    }
+}
