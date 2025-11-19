@@ -75,7 +75,7 @@ write(lista.includes(6))
 write(includes(6, [5, 2, 7]))
 write(includes(6, [6, 2, 7]))
 */
-
+/*
 function visaRepeterat(ord:string, antal:number){
     for (let i = 0; i < antal; i++) {
         write(ord)
@@ -98,8 +98,17 @@ function visaUppdelat(ord:string, tecken:string){
 visaUppdelat("a-b-c-d", "-");
 visaUppdelat("Apple/Microsoft/Google", "/")
 
+
 function antalMellanslag(ord:string){
+    let antal1= 0
     for (let i = 0; i < ord.length; i++){
-        
+        if (ord[i] === " "){
+            antal1++
+        }
     }
+    return antal1
 }
+write(antalMellanslag("Hej på dig!"));
+write(antalMellanslag("Balder."))
+*/
+
